@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/*Jackson Hinks - 4/29/2026*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #23342f;
+    background-color: #f3f6ef;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background-color: #264a43;
+    border-bottom: 4px solid #93c6ad;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    color: #dceee5;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.55rem 0.85rem;
+    border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    color: #264a43;
+    background-color: #dceee5;
+}
+
+.hero {
+    padding: 48px 0;
+    background: linear-gradient(135deg, #f8fff9, #dfeee7);
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.88);
+    border-left: 6px solid #93c6ad;
+    border-radius: 12px;
+    padding: 28px;
+    box-shadow: 0 8px 18px rgba(38, 74, 67, 0.12);
+}
+
+.hero h1 {
+    color: #264a43;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.08rem;
+}
+
+.hero-image img {
+    border-radius: 12px;
+    border: 1px solid #d0dfd7;
+    box-shadow: 0 8px 18px rgba(38, 74, 67, 0.12);
+}
+
+.btn-main {
+    color: #ffffff;
+    background-color: #2f6f5e;
+    border: 1px solid #2f6f5e;
+    font-weight: 600;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+    color: #ffffff;
+    background-color: #254f45;
+    border-color: #254f45;
+}
+
+.btn-outline-main {
+    color: #2f6f5e;
+    background-color: #ffffff;
+    border: 1px solid #2f6f5e;
+    font-weight: 600;
+}
+
+.btn-outline-main:hover,
+.btn-outline-main:focus {
+    color: #ffffff;
+    background-color: #2f6f5e;
+}
+
+.section-title {
+    color: #264a43;
+    font-weight: 700;
+}
+
+.content-card,
+.form-card {
+    background-color: #ffffff;
+    border: 1px solid #d8e4dc;
+    border-left: 6px solid #93c6ad;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(38, 74, 67, 0.08);
+}
+
+.content-card h2,
+.content-card h3,
+.form-card h2,
+.form-card h3 {
+    color: #264a43;
+}
+
+.card {
+    border: 1px solid #d8e4dc;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(38, 74, 67, 0.08);
+}
+
+.card img {
+    height: 205px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #eef6f1;
+}
+
+.card-title {
+    color: #264a43;
+    font-weight: 700;
+}
+
+.service-card {
+    background-color: #ffffff;
+}
+
+.group-card {
+    background-color: #ffffff;
+    border-left: 8px solid #93c6ad;
+}
+
+.group-img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    object-position: center bottom;
+    background-color: #eef6f1;
+}
+
+.subcategory-box {
+    background-color: #eaf5ef;
+    border: 1px solid #c9ded1;
+    border-radius: 10px;
+    padding: 16px;
+    height: 100%;
+}
+
+.subcategory-box h3 {
+    color: #264a43;
+    font-weight: 700;
+}
+
+.subcategory-box p {
+    margin-bottom: 0;
+}
+
+.clinic-note {
+    background-color: #eaf5ef;
+    border: 1px solid #c9ded1;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+form label {
+    font-weight: 600;
+    color: #264a43;
+}
+
+.form-control,
+.form-select {
+    border-color: #c9ded1;
+}
+
+footer {
+    background-color: #264a43;
+    color: #ffffff;
+    padding: 24px 0;
+    margin-top: 32px;
+}
+
+footer a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #dceee5;
+}
+
+@media (max-width: 767px) {
+    header {
+        position: static;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        margin-top: 0.75rem;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 32px 0;
+    }
+
+    .hero-text {
+        padding: 22px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .group-img {
+        height: 220px;
+        min-height: 220px;
+    }
+}
